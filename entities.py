@@ -66,6 +66,12 @@ class Player(pygame.sprite.Sprite):
             self.rect.x -= PLAYER_SPEED
         if keys[pygame.K_RIGHT]:
             self.rect.x += PLAYER_SPEED
+        
+        # F1: 이동한 "뒤에" 위치를 제한해야 한 프레임도 화면 밖으로 나가지 않음
+        if self.rect.left < 0:
+            self.rect.left = 0
+        if self.rect.right > WIDTH:
+            self.rect.right = WIDTH
 
     def shoot(self):
         """플레이어 위쪽 가운데에서 출발하는 총알 하나를 만들어 돌려준다."""
