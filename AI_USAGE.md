@@ -16,5 +16,5 @@ AI 를 전혀 쓰지 않았다면 표를 지우고 "이 과제에서 생성형 A
 | 예시 2026-01-01 | ChatGPT | F1 | 방향키를 누르고 있는 동안 계속 움직이게 하는 방법 | `pygame.key.get_pressed()` 사용법만 참고, 화면 경계 처리는 직접 작성 |
 
 | 2026-11-14 | Claude | 기타 | 스타터 첫 커밋과 GitHub 저장소 연결 순서 | 안내 순서대로 실행 전 첫 커밋 후 빈 저장소에 push |
-| 2026-11-15 | Claude | 기타 | .gitignore에 무엇을 더 포함할지 | 과제 목표에서 제시한 __pycache__, venv/, env/ 말고도 highscore.txt, .vscode/ 제외 |
-
+| 2026-11-15 | Claude | F1 | .gitignore에 무엇을 더 포함할지 | 과제 목표에서 제시한 __pycache__, venv/, env/ 말고도 highscore.txt, .vscode/ 제외 |
+| 2026-11-16 | Claude | F2 | 작업한 순서와 커밋하는 단위를 분리하기 위해 파일 안의 변경 중 일부만 골라서 스테이징 하는 방법 | git add -p를 통해 shoot()부분을 커밋한 뒤, 나머지 update() 커밋 |
